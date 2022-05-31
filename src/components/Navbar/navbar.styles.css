@@ -1,0 +1,136 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 130px;
+	background: #ffffff;
+	padding: 14px 10px;
+	width: 100%;
+	gap: 5px;
+	margin: 0 auto;
+	transition: 0.5s all ease;
+	margin-bottom: 140px;
+}
+.navbar.active {
+	background: rgb(239, 239, 239);
+}
+
+.navbar a {
+	text-decoration: none;
+}
+.navbar__title {
+	order: 1;
+}
+
+.store-title {
+	color: #424141;
+	font-size: 20px;
+	text-align: center;
+}
+.navbar__user-info {
+	order: 3;
+	/* margin-left: auto; */
+	font-size: 16px;
+	margin-left: 100px;
+}
+.navbar__user-info h1 {
+	font-size: 16px;
+	color: #424141 !important;
+}
+.navbar__cart {
+	display: flex;
+	order: 2;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+}
+.cart {
+	display: flex;
+	align-items: center;
+	order: 3;
+}
+
+.cart-counter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(255, 46, 86);
+	height: 18px;
+	width: 18px;
+	padding-top: 1px;
+	border-radius: 50%;
+	margin-left: -10px;
+	margin-top: -27px;
+	color: #fff;
+	/* font-weight: bold; */
+	font-size: 12px;
+}
+.handbag {
+	color: #424141;
+}
+/* Search */
+.search__search-box {
+	order: 4;
+	width: 100%;
+	/* padding: 16px 0px; */
+}
+
+.search__search-box input {
+	width: 100%;
+	border: 1px solid rgb(225, 227, 234);
+	border-radius: 8px;
+	font-size: 14px;
+	padding: 12px 10px;
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		flex-wrap: nowrap;
+		padding: 0 20px;
+		height: 80px;
+		/* max-width: 1000px; */
+	}
+	.store-title {
+		font-size: 27px;
+		width: 200px;
+	}
+	.search__search-box {
+		order: 2;
+		margin: 0px 20px;
+		width: 100%;
+	}
+	.cart {
+		margin-left: 50px;
+	}
+	.navbar__cart {
+		order: 4;
+	}
+
+	.navbar__user-info {
+		margin-left: 0px;
+	}
+
+	.navbar__cart {
+		gap: 0px;
+	}
+}
+
+@media (min-width: 992px) {
+	.store-title {
+		font-size: 30px;
+		width: 230px;
+	}
+}
+@media (max-width: 368px) {
+	.store-title {
+		font-size: 16px;
+		width: 120px;
+	}
+	.navbar__user-info {
+		margin-left: 0px;
+	}
+}

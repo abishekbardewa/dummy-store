@@ -1,0 +1,4 @@
+.search__search-box input {
+	padding: 10px 40px;
+	flex-grow: 2;
+}
